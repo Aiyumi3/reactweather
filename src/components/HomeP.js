@@ -1,7 +1,12 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import 'uikit/dist/css/uikit.min.css';
 
 const HomeP = () => {
+    const inputRef = useRef(null);
+    useEffect(() => {
+        // Устанавл фокус на элемент input при рендере компонента
+        inputRef.current.focus();
+    }, []);
 
     const [search, setSearch] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
@@ -66,11 +71,16 @@ const HomeP = () => {
 
         } catch (error) {
             setErrorMessage("Enter a valid city!");
+            inputRef.current.focus();
         }
-
-        setErrorMessage("");
         setSearch('');
     };
+
+    useEffect(() => {
+        if (errorMessage !== '') {
+            setErrorMessage('');
+        }
+    }, [weatherData]);
 
     return (
         <>
@@ -79,7 +89,7 @@ const HomeP = () => {
                     padding: '30px 70px 30px 70px', zIndex: 3, position: 'sticky', top: '-1em' }}>
                 <form onSubmit={handleSearch}
                       className="uk-flex uk-flex-middle uk-margin-bottom">
-                    <input className="uk-search-input uk-border-rounded" type="search" aria-label="Search"
+                    <input ref={inputRef} className="uk-search-input uk-border-rounded" type="search" aria-label="Search"
                            value={search} onChange={(e) => setSearch(e.target.value)}
                            style={{borderTopLeftRadius: '20px', borderBottomLeftRadius: '20px'}} name="city"
                            id="inp-name" placeholder="enter city"/>
@@ -87,9 +97,9 @@ const HomeP = () => {
                     <button type="submit" id="search" className="uk-button uk-button-default uk-border-rounded">
                         search
                     </button>
-                    {errorMessage && <span className="uk-text-danger" id="inp-name-notify">{errorMessage}</span>}
 
                 </form>
+                <p>{errorMessage && <span className="uk-text-danger" id="inp-name-notify">{errorMessage}</span>}</p>
             </nav>
 
             <section id="content"
