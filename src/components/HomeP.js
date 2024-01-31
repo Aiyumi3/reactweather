@@ -79,7 +79,7 @@ const HomeP = () => {
             </nav>
 
             <section id="content"
-                     style={{height: 'available', backgroundColor: 'seashell', margin: '15px', backgroundAttachment: 'initial'}}>
+                     style={{height: 'available', backgroundColor: 'rgba(255, 245, 238, 0.61)', margin: '15px', backgroundAttachment: 'initial'}}>
 
                 <br/><br/>
                 <div className="container" style={{backgroundPosition: 'inherit', position: 'relative'}}>
