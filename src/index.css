@@ -34,7 +34,6 @@ h1, h3 {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(270deg, rgba(167, 236, 193, 0.95) 0%, rgba(204, 142, 164, 0.95) 100%) ;
 }
-
 a {
     color: purple;
     transition: color 0.3s ease-in-out;
@@ -45,38 +44,30 @@ a:visited {
 a:hover {
     color: azure;
 }
-
-input::placeholder {
+.uk-search-input::placeholder {
     color: rgba(148, 136, 113, 0.50);
     font-family: 'Andika',"Arial Rounded MT", Helvetica, sans-serif;
     font-size: 100%; /*12pt*/
+    padding: 25px 20px;
 }
-textarea::placeholder { 
-    color: rgba(148, 136, 113, 0.50);
+.uk-button {
     font-family: 'Andika',"Arial Rounded MT", Helvetica, sans-serif;
-    font-size: 100%; /*12pt*/
-}
-button {
     background-color: peachpuff;
     color: floralwhite;
     border-color: thistle;
     display: block;
-    font-weight: 700;
-    letter-spacing: 1px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px 40px 40px 20px;
 	cursor: pointer;
-	padding: 25px 20px;
+	padding: 5px 15px;
 	justify-content: center;
 	align-items: center;
 	box-shadow: 4px 4px 15px 3px rgba(255, 255, 255, 0.58);
 	-webkit-text-stroke: 1px #ad6fff;
 	text-align: center;
 	transition: background-color 10s, color 10s, ease-in-out;
-    font-family: 'Andika',"Arial Rounded MT", Helvetica, sans-serif;
-    font-size: 160%; /*20pt*/
+    font-size: 100%;
 }
-button:active {
+.uk-button:hover {
 	color: #471F3D;
 	background-color: #F5EDF7;
     color: rgba(243, 135, 135, 0.97);

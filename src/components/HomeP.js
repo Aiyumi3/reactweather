@@ -20,11 +20,11 @@ const HomeP = () => {
             const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]}.svg`;
 
             const weatherHtml = (
-                <div className="card mb-4" style={{ borderRadius: '17px', margin: '15px' }}>
+                <div className="card mb-4" style={{ padding: '25px', borderRadius: '17px', margin: '15px', backgroundColor: 'rgba(216, 191, 216, 0.74)' }}>
                     <div className="row no-gutters">
                         <div className="col-8 col-xl-7">
                             <div className="float-left">
-                                <img src={icon} className="card-img" alt="weather" style={{ margin: '7px' }} />
+                                <img src={icon} className="card-img" alt="weather" style={{ margin: '7px', transform: 'scale(3) translateX(23px)' }} />
                             </div>
                         </div>
                         <div className="card-body">
@@ -79,12 +79,12 @@ const HomeP = () => {
             </nav>
 
             <section id="content"
-                     style={{height: 'available', backgroundColor: 'rgba(255, 245, 238, 0.61)', margin: '15px', backgroundAttachment: 'initial'}}>
-
+                     style={{height: 'available', backgroundColor: 'rgba(255, 245, 238, 0.61)', margin: '15px',
+                         backgroundAttachment: 'initial', borderRadius: '25px', borderColor: 'peachpuff'}}>
                 <br/><br/>
-                <div className="container" style={{backgroundPosition: 'inherit', position: 'relative'}}>
+                <div className="uk-container" style={{backgroundPosition: 'inherit', position: 'relative'}}>
                     <div id="weather-container"
-                         className="uk-child-width-1-2@s uk-child-width-1-4@md uk-child-width-1-2@lg uk-child-width-1-3@xl" uk-grid="true">
+                         className="uk-flex uk-flex-center">
                         {weatherData}
                     </div>
                 </div>
