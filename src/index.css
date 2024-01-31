@@ -1,0 +1,64 @@
+body {
+    overflow-x: hidden;
+    background: url("./bg.jpg") 100% 100% no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+#root {
+	font-family: 'Andika',"Arial Rounded MT", Helvetica, sans-serif;
+	font-size: 160%; /*20pt*/
+	font-style: normal;
+	line-height: 40px;
+    color: #000003;
+    background-color: rgba(148, 136, 113, 0.55);
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(223, 227, 159, 0.94);
+  border-radius: 10px;
+    background-color: #605959;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(270deg, rgba(224, 238, 175, 0.95) 0%, rgba(167, 236, 193, 0.95) 100%) ;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(270deg, rgba(167, 236, 193, 0.95) 0%, rgba(204, 142, 164, 0.95) 100%) ;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Andika',"Arial Rounded MT", Helvetica, sans-serif;
+    font-size: 160%; /*20pt*/
+}
+input::placeholder {
+    color: rgba(148, 136, 113, 0.50);
+    font-family: 'Andika',"Arial Rounded MT", Helvetica, sans-serif;
+    font-size: 100%; /*12pt*/
+}
+textarea::placeholder { 
+    color: rgba(148, 136, 113, 0.50);
+    font-family: 'Andika',"Arial Rounded MT", Helvetica, sans-serif;
+    font-size: 100%; /*12pt*/
+}
+button {
+	cursor: pointer;
+	padding: 25px 20px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	background-color: #471F3D;
+	box-shadow: 4px 4px 15px 3px rgba(255, 255, 255, 0.58);
+	-webkit-text-stroke: 1px #ad6fff;
+	text-align: center;
+	color: #F5EDF7;
+	transition: background-color 10s, color 10s, ease-in-out;
+    font-family: 'Andika',"Arial Rounded MT", Helvetica, sans-serif;
+    font-size: 160%; /*20pt*/
+}
+button:active {
+	color: #471F3D;
+	background-color: #F5EDF7;
+}
