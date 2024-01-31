@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Aiyumi3/reactweather.git/static/css/main.16d5b6b4.css",
+    "main.js": "/Aiyumi3/reactweather.git/static/js/main.486cd09d.js",
+    "static/media/bg.jpg": "/Aiyumi3/reactweather.git/static/media/bg.320d9ec9377b823dd5f0.jpg",
+    "index.html": "/Aiyumi3/reactweather.git/index.html",
+    "main.16d5b6b4.css.map": "/Aiyumi3/reactweather.git/static/css/main.16d5b6b4.css.map",
+    "main.486cd09d.js.map": "/Aiyumi3/reactweather.git/static/js/main.486cd09d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16d5b6b4.css",
+    "static/js/main.486cd09d.js"
+  ]
+}
