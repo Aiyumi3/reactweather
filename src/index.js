@@ -4,7 +4,6 @@ import App from "./App";
 import UIkit from 'uikit';
 import Icons from 'uikit/dist/js/uikit-icons';
 import 'uikit/dist/css/uikit.min.css'; //  CSS
-import './index.css';
 
 UIkit.use(Icons); // icons activation
 
@@ -16,15 +15,4 @@ ReactDOM.createRoot(mainRoot).render(
         <App />
     </React.StrictMode>
 );
-
-
-
-/////
-/*
-ReactDOM.render(
-    <React.StrictMode>
-        <App  />
-    </React.StrictMode>,
-    document.querySelector('#root')
-);*/
 
