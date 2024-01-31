@@ -1,0 +1,74 @@
+body {
+    overflow-x: hidden;
+    background: url("./bg.jpg") 100% 100% no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+#root {
+    font-family: 'Andika',"Arial Rounded MT", Helvetica, sans-serif;
+    font-size: 160%; /*20pt*/
+    font-style: normal;
+    line-height: 40px;
+    color: #000003;
+    background-color: rgba(148, 136, 113, 0.55);
+}
+h1, h3 {
+    color: ivory;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 15px
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(223, 227, 159, 0.94);
+    border-radius: 10px;
+    background-color: #605959;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(270deg, rgba(224, 238, 175, 0.95) 0%, rgba(167, 236, 193, 0.95) 100%) ;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(270deg, rgba(167, 236, 193, 0.95) 0%, rgba(204, 142, 164, 0.95) 100%) ;
+}
+a {
+    color: purple;
+    transition: color 0.3s ease-in-out;
+}
+a:visited {
+    color: aquamarine;
+}
+a:hover {
+    color: azure;
+}
+.uk-search-input::placeholder {
+    color: rgba(148, 136, 113, 0.50);
+    font-family: 'Andika',"Arial Rounded MT", Helvetica, sans-serif;
+    font-size: 100%; /*12pt*/
+    padding: 25px 20px;
+}
+.uk-button {
+    font-family: 'Andika',"Arial Rounded MT", Helvetica, sans-serif;
+    background-color: peachpuff;
+    color: floralwhite;
+    border-color: thistle;
+    display: block;
+    border-radius: 20px 40px 40px 20px;
+    cursor: pointer;
+    padding: 5px 15px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 15px 3px rgba(255, 255, 255, 0.58);
+    -webkit-text-stroke: 1px #ad6fff;
+    text-align: center;
+    transition: background-color 10s, color 10s, ease-in-out;
+    font-size: 100%;
+}
+.uk-button:hover {
+    color: #471F3D;
+    background-color: #F5EDF7;
+    color: rgba(243, 135, 135, 0.97);
+}
