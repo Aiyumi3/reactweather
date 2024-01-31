@@ -29,14 +29,14 @@ const HomeP = () => {
                                      width="100"
                                      style={{margin: '7px', transform: 'scale(2.5) translateX(-23px)'}}/> <br/><br/><br/>
                                 <hr/>
-                                <p className="uk-text-large uk-text-primary">
+                                <h2 className="uk-text-large uk-text-primary">
                                     <span style={{
                                         color: '#54315c',
                                         fontSize: '15pt',
                                         fontWeight: 'bold', letterSpacing: '2px',
                                         padding: '11px'
                                     }}> <b><i>{weather[0]["description"]}</i></b></span>
-                                </p>
+                                </h2>
                             </div>
                         </div>
                         <div className="uk-width-1-2@s">
