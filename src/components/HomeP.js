@@ -20,29 +20,43 @@ const HomeP = () => {
             const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]}.svg`;
 
             const weatherHtml = (
-                <div className="card mb-4" style={{ padding: '25px', borderRadius: '17px', margin: '15px', backgroundColor: 'rgba(216, 191, 216, 0.74)' }}>
-                    <div className="row no-gutters">
-                        <div className="col-8 col-xl-7">
-                            <div className="float-left">
-                                <img src={icon} className="card-img" alt="weather" style={{ margin: '7px', transform: 'scale(3) translateX(23px)' }} />
+                <div className="uk-card uk-card-default uk-card-body uk-card-hover uk-margin"
+                     style={{ padding: '25px', borderRadius: '17px', margin: '15px', backgroundColor: 'rgba(216, 191, 216, 0.74)' }}>
+                    <div className="uk-grid-collapse uk-child-width-expand@s" uk-grid="true">
+                        <div className="uk-width-1-2@s">
+                            <div className="uk-text-center">
+                                <img src={icon} className="uk-border-circle uk-box-shadow-large" alt="weather"
+                                     width="100"
+                                     style={{margin: '7px', transform: 'scale(2.5) translateX(-23px)'}}/> <br/><br/><br/>
+                                <hr/>
+                                <p className="uk-text-large uk-text-primary">
+                                    <span style={{
+                                        color: '#54315c',
+                                        fontSize: '15pt',
+                                        fontWeight: 'bold', letterSpacing: '2px',
+                                        padding: '11px'
+                                    }}> <b><i>{weather[0]["description"]}</i></b></span>
+                                </p>
                             </div>
                         </div>
-                        <div className="card-body">
-                            <p className="card-text"><span style={{ color: '#54315c', fontSize: '15pt', fontWeight: 400, paddingLeft: '10px', textAlign: 'center' }}>
-                                {weather[0]["description"]}
-                            </span>
-                            </p>
-                            <p className="card-text">
-                                <span style={{ fontSize: '20pt', fontWeight: 700 }}>{Math.round(main.temp)}<sup style={{ backgroundColor: '#ffe4c4', borderRadius: '10px' }}>°C</sup></span><br />
-                                min: {Math.round(main.temp_min)}<sup style={{ backgroundColor: 'bisque', borderRadius: '10px' }}>°C</sup>,
-                                max: {Math.round(main.temp_max)}<sup style={{ backgroundColor: 'bisque', borderRadius: '10px' }}>°C</sup><br />
-                                humidity 💧: {main.humidity} %<br />
-                                wind speed: {wind["speed"]} m/s
-                                <br />
-                                <small className="text-muted">coords: {coord["lon"]}, {coord["lat"]}</small>
-                            </p>
-                            <h5 className="card-title">
-                                {name}, <span style={{ backgroundColor: '#efd0f7', borderRadius: '11px' }}>{sys.country}</span>
+                        <div className="uk-width-1-2@s">
+                            <p className="uk-text-bold uk-margin-remove">
+                                <span style={{fontSize: '20pt', fontWeight: 700}}>{Math.round(main.temp)}<sup
+                                    style={{backgroundColor: '#ffe4c4', borderRadius: '10px'}}>°C</sup></span><br/>
+                            </p><p className="uk-margin-remove">
+                        min: {Math.round(main.temp_min)}<sup
+                            style={{backgroundColor: 'bisque', borderRadius: '10px'}}>°C</sup>,
+                            max: {Math.round(main.temp_max)}<sup
+                            style={{backgroundColor: 'bisque', borderRadius: '10px'}}>°C</sup><br/>
+                        </p><p className="uk-margin-remove">
+                            humidity 💧: {main.humidity} %<br/></p><p className="uk-margin-remove">
+                            wind speed: {wind["speed"]} m/s</p>
+                            <br/>
+                            <small className="uk-text-muted">coords: {coord["lon"]}, {coord["lat"]}</small>
+
+                            <h5 className="uk-margin-remove">
+                                {name}, <span className="uk-background-muted uk-border-rounded"
+                                style={{backgroundColor: '#efd0f7', borderRadius: '11px'}}>{sys.country}</span>
                             </h5>
                         </div>
                     </div>
