@@ -12,6 +12,13 @@ body {
     color: #000003;
     background-color: rgba(148, 136, 113, 0.55);
 }
+h1, h3 {
+    color: ivory;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 15px
+}
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -28,11 +35,17 @@ body {
   background: linear-gradient(270deg, rgba(167, 236, 193, 0.95) 0%, rgba(204, 142, 164, 0.95) 100%) ;
 }
 
-a{
-    text-decoration: none;
-    font-family: 'Andika',"Arial Rounded MT", Helvetica, sans-serif;
-    font-size: 160%; /*20pt*/
+a {
+    color: purple;
+    transition: color 0.3s ease-in-out;
 }
+a:visited {
+    color: aquamarine;
+}
+a:hover {
+    color: azure;
+}
+
 input::placeholder {
     color: rgba(148, 136, 113, 0.50);
     font-family: 'Andika',"Arial Rounded MT", Helvetica, sans-serif;

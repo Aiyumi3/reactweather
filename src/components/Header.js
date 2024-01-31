@@ -13,14 +13,11 @@ const Header = () => {
 	};
 
     return (
-		<header style={{
-			mixBlendMode: 'hard-light',
-			backgroundBlendMode: 'multiply'
-		}} uk-sticky="position: top">
-			<nav style={headerStyle} className="uk-navbar-container">
+		<header uk-sticky="position: top">
+			<nav style={headerStyle} className="uk-flex uk-flex-column">
 				<div className="uk-container">
 					<div className="uk-navbar-center" style={{gap: 0}}>
-						<h1 uk-scrollspy="cls: uk-animation-slide-right; repeat: true">🌤🌬~ current weather ~🌬🌤</h1>
+						<h1 uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">🌤☁ current weather ☁🌤</h1>
 					</div>
 				</div>
 			</nav>
