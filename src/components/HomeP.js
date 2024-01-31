@@ -41,8 +41,8 @@ const HomeP = () => {
                         </div>
                         <div className="uk-width-1-2@s">
                             <h2 className="uk-text-bold uk-margin-remove">
-                                <span style={{fontSize: '20pt', fontWeight: 700}}>{Math.round(main.temp)}<sup
-                                    style={{backgroundColor: '#ffe4c4', borderRadius: '10px'}}>°C</sup></span><br/>
+                                <i><span style={{fontSize: '20pt', fontWeight: 700}}>{Math.round(main.temp)}<sup
+                                    style={{backgroundColor: '#ffe4c4', borderRadius: '10px'}}>°C</sup></span></i><br/>
                             </h2><p className="uk-margin-remove">
                         min: {Math.round(main.temp_min)}<sup
                             style={{backgroundColor: 'bisque', borderRadius: '10px'}}>°C</sup>,
