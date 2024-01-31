@@ -57,16 +57,21 @@ textarea::placeholder {
     font-size: 100%; /*12pt*/
 }
 button {
+    background-color: peachpuff;
+    color: floralwhite;
+    border-color: thistle;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 	cursor: pointer;
 	padding: 25px 20px;
 	justify-content: center;
 	align-items: center;
-	border-radius: 50px;
-	background-color: #471F3D;
 	box-shadow: 4px 4px 15px 3px rgba(255, 255, 255, 0.58);
 	-webkit-text-stroke: 1px #ad6fff;
 	text-align: center;
-	color: #F5EDF7;
 	transition: background-color 10s, color 10s, ease-in-out;
     font-family: 'Andika',"Arial Rounded MT", Helvetica, sans-serif;
     font-size: 160%; /*20pt*/
@@ -74,4 +79,5 @@ button {
 button:active {
 	color: #471F3D;
 	background-color: #F5EDF7;
+    color: rgba(243, 135, 135, 0.97);
 }
